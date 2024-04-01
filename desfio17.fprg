@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:31:30 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjozMToxOSAiOzI4NTE="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjozMToyMSAiOzE7R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAyOjIyOjUzICI7c2FsdmFyMDE3LmZwcmc7NzA1Mw=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjozMTozMCAiOzE7Mjk1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <output expression="&quot;A=&quot;&amp;B" newline="True"/>
+            <output expression="&quot;B=&quot;&amp;A" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

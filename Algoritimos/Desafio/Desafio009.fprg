@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:29:12 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjExOjIyOjE4ICI7Mjc1MA=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjExOjI5OjEyICI7MTsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, profundidade, diagonal" type="Real" array="False" size=""/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <input variable="profundidade"/>
+            <assign variable="diagonal" expression="base^2+altura^2+profundidade^2"/>
+            <output expression="diagonal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

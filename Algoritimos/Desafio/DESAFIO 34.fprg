@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 10:45:24 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjEwOjI5OjQ3ICI7MjcxNg=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjEwOjQ1OjI0ICI7MTsyODE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, cinco, soma" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="cinco" start="1" end="num -1" direction="inc" step="1">
+                <if expression="cinco%5==0">
+                    <then>
+                        <assign variable="soma" expression="soma+cinco"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

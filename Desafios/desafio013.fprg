@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:57:07 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAxOjI3OjU1ICI7MjcxMQ=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAxOjU3OjA3ICI7MzsyODIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="termoU, TermoD, i, raz&#227;o, termo, termoF" type="Integer" array="False" size=""/>
+            <input variable="termoU"/>
+            <input variable="raz&#227;o"/>
+            <assign variable="termoD" expression="termoU*raz&#227;o^(5-1)"/>
+            <output expression="termoD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

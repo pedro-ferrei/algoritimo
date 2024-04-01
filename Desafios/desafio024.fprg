@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:55:53 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA4OjA2OjIxICI7MjcxMA=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA4OjU1OjUzICI7MTsyODI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, a, b, c, d, e, f, num2, num3, g, h, i, num4, j, k, l, verificacao" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="a" expression="num/100"/>
+            <assign variable="b" expression="num%100/10"/>
+            <assign variable="c" expression="num%100%10"/>
+            <assign variable="d" expression="c"/>
+            <assign variable="e" expression="b"/>
+            <assign variable="f" expression="a"/>
+            <assign variable="d" expression="d*100"/>
+            <assign variable="e" expression="e*10"/>
+            <assign variable="num2" expression="d+e+f"/>
+            <output expression="num2" newline="True"/>
+            <assign variable="num3" expression="num+num2"/>
+            <output expression="num3" newline="True"/>
+            <assign variable="g" expression="num3/100"/>
+            <assign variable="h" expression="num3%100/10"/>
+            <assign variable="i" expression="num3%100%10"/>
+            <assign variable="j" expression="g*1"/>
+            <assign variable="k" expression="h*2"/>
+            <assign variable="l" expression="i*3"/>
+            <assign variable="num4" expression="j+k+l"/>
+            <output expression="num4" newline="True"/>
+            <assign variable="verificacao" expression="num4%10"/>
+            <output expression="verificacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

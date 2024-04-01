@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 10:28:59 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAyLTE5OyIwOToxODo0OCAiOzI4NzA="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAyLTE5OyIxMDoyODo1OSAiOzE7Mjk3Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arq" type="String" array="False" size=""/>
+            <assign variable="arq" expression="&quot;func01.txt&quot;"/>
+            <open expression="arq" mode="read"/>
+            <read variable="arq"/>
+        </body>
+    </function>
+</flowgorithm>

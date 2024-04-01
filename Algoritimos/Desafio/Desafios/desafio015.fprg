@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:13:30 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAyOjEwOjAzICI7MjY5Nw=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAyOjEzOjMwICI7MjsyODA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="raio, altura, volume" type="Real" array="False" size=""/>
+            <input variable="raio"/>
+            <input variable="altura"/>
+            <assign variable="volume" expression="(3.14*raio^2)*altura"/>
+            <output expression="volume" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

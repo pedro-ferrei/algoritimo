@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:50:47 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDQ6MzE6NDcgIjsyNjk4"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDQ6NTA6MzYgIjsxO05pY29sYXMuc2FpdG87TlQ0MDsyMDI0LTAzLTA0OyIwNDowNzo1MyAiO0Rlc2FmaW8wMjAuZnByZzs2OTk5"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDQ6NTA6NDcgIjsxOzI4MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <if expression="numero&gt;=0 &amp;&amp; numero&lt;=60">
+                <then>
+                    <assign variable="numero" expression="numero+1"/>
+                    <assign variable="numero" expression="numero%61"/>
+                    <output expression="numero" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Escolha um n&#250;mero entre 0 e 60&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

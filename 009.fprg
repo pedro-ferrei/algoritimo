@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 09:57:15 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMzE7IjA4OjAxOjMzICI7MzYxNw=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMzE7IjA5OjU3OjE1ICI7MTszNzM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <for variable="a" start="2" end="9" direction="inc" step="1">
+                <for variable="b" start="1" end="10" direction="inc" step="1">
+                    <output expression="a &amp; &quot; x &quot; &amp; b &amp; &quot; = &quot; &amp; a*b" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

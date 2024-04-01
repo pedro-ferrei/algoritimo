@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 10:52:21 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAyLTE5OyIxMDozMDoyNSAiOzI4NTE="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAyLTE5OyIxMDo1MjoyMSAiOzQ7Mjk2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arq" type="String" array="False" size=""/>
+            <assign variable="arq" expression="&quot;fundo01.txt&quot;"/>
+            <while expression="!EOF()">
+                <read variable="arq"/>
+                <output expression="arq" newline="True"/>
+            </while>
+            <open expression="&quot;arq de  leitura&quot;" mode="write"/>
+            <write expression="&quot;id,nome,salario&quot;"/>
+            <write expression="&quot;1'manuel gomes da silva,' 2000&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

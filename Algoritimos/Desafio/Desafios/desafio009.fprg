@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:24:19 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjIwOjIxICI7MjY5OA=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjI0OjE5ICI7MTsyODE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="diagonal, base, altura, profund" type="Integer" array="False" size=""/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <input variable="profund"/>
+            <assign variable="diagonal" expression="base^2+altura^2+profund^2"/>
+            <output expression="diagonal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 08:26:31 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDItMDU7IjA3OjQ3OjAyICI7MzYyNA=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDItMDU7IjA4OjI2OjMxICI7MjszNzMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <declare name="mens" type="String" array="False" size=""/>
+            <input variable="ano"/>
+            <declare name="lbissexto" type="Boolean" array="False" size=""/>
+            <assign variable="lbissexto" expression="ebisesto(ano)"/>
+            <if expression="lbissexto">
+                <then>
+                    <assign variable="mens" expression="ano &amp; &quot; e bissexto &quot;"/>
+                </then>
+                <else>
+                    <assign variable="mens" expression="ano &amp; &quot; n&#227;o e bissexto &quot;"/>
+                </else>
+            </if>
+            <output expression="mens" newline="True"/>
+        </body>
+    </function>
+    <function name="ebisesto" type="Boolean" variable="res">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="res" type="Boolean" array="False" size=""/>
+            <assign variable="res" expression="(ano % 4 == 0 &amp;&amp; ano % 100 != 0) ||&#13;&#10;ano % 400 == 0"/>
+        </body>
+    </function>
+</flowgorithm>

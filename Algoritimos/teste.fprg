@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 09:27:33 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMDg6MzM6NTQgIjszNTM5"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMDk6Mjc6MzMgIjsxOzM2NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="a, b, c" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="media(a,b,c)"/>
+            <if expression="media &gt;=7">
+                <then>
+                    <assign variable="mensagem" expression="media &amp; &quot; aprovado&quot;"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="media % &quot; reprovado&quot;"/>
+                </else>
+            </if>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+    <function name="presen&#231;a" type="Integer" variable="aulas">
+        <parameters>
+            <parameter name="aula" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="aulas" type="Integer" array="False" size=""/>
+            <assign variable="aulas" expression="100"/>
+            <assign variable="presen&#231;a" expression="aula/aulas"/>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="media">
+        <parameters>
+            <parameter name="nota1" type="Real" array="False"/>
+            <parameter name="nota2" type="Real" array="False"/>
+            <parameter name="nota3" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="(nota1*2 + nota2*3 + nota3*5)/10"/>
+        </body>
+    </function>
+</flowgorithm>

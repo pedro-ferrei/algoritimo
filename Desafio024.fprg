@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:41:17 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDY7IjA3OjQwOjM5ICI7Mjc2MA=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDY7IjA4OjQxOjE3ICI7MjsyODY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="unidade, dezena, centena, valor, novo" type="Integer" array="False" size=""/>
+            <input variable="valor"/>
+            <assign variable="unidade" expression="valor%10"/>
+            <assign variable="dezena" expression="(valor%100)/10"/>
+            <assign variable="centena" expression="valor/100"/>
+            <assign variable="novo" expression="unidade*100+dezena*10+centena"/>
+            <assign variable="novo" expression="valor+novo"/>
+            <output expression="novo" newline="True"/>
+            <assign variable="unidade" expression="novo%10*1"/>
+            <assign variable="dezena" expression="(novo%100)/5*2"/>
+            <assign variable="centena" expression="valor/100*3"/>
+            <assign variable="novo" expression="unidade+dezena+centena"/>
+            <output expression="novo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

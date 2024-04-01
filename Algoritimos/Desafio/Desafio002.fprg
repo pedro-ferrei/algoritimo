@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:05:12 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA4OjMxOjIyICI7Mjc1MQ=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA5OjAwOjE1ICI7MTtOaWNvbGFzLnNhaXRvO0RFU0tUT1AtQ0c1OFVIODsyMDI0LTAyLTA1OyIwOToyNzozNSAiO0V4ZXJjMDEwVGVzdGVBbHVub01lZGlhRmFsdGEuZnByZzs5NjM5"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA5OjA1OjEyICI7MTsyODYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dd, mm, aaaa" type="Integer" array="False" size=""/>
+            <input variable="dd"/>
+            <input variable="mm"/>
+            <input variable="aaaa"/>
+            <output expression="dd &amp; &quot; / &quot;&amp;mm&amp;&quot; / &quot;&amp;aaaa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

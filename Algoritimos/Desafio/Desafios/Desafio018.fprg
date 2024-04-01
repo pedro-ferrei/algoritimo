@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 03:12:01 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MzQ6NTcgIjsyNzAw"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDM6MTI6MDEgIjsxOzI3OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, den1, num2, den2, soma, mult, mult1, mmc, num1a, num2a, den2a" type="Integer" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="den1"/>
+            <input variable="num2"/>
+            <input variable="den2"/>
+            <if expression="den1==den2">
+                <then>
+                    <assign variable="soma" expression="num1+num2"/>
+                    <assign variable="mult" expression="(num1*num2)"/>
+                    <assign variable="mult1" expression="den1*den2"/>
+                    <output expression="soma&amp;&quot;/&quot;&amp;den1" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="mmc" expression="den1*den2"/>
+                    <assign variable="num1a" expression="mmc/den1*num1"/>
+                    <assign variable="num2a" expression="mmc/den2*num2"/>
+                    <assign variable="soma" expression="num1a+num2a"/>
+                    <output expression="soma&amp;&quot;/&quot;&amp;mmc" newline="True"/>
+                    <assign variable="mult" expression="num1*num2"/>
+                    <assign variable="mult1" expression="den1*den2"/>
+                </else>
+            </if>
+            <output expression="mult&amp;&quot;/&quot;&amp;mult1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

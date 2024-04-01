@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 08:36:50 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA0OjUxOjM1ICI7Mjc1Mw=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA1OjAyOjQ5ICI7MTsyODYz"/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA2OyIwODozNjo1MCAiOzE7Mjk2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="na, na1" type="Integer" array="False" size=""/>
+            <input variable="na"/>
+            <input variable="na1"/>
+            <assign variable="na" expression="na%100"/>
+            <assign variable="na" expression="na%10"/>
+            <output expression="na" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

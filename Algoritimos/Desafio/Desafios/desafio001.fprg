@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:36:05 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjA4OjMwOjQyICI7MjcwOA=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjA4OjM2OjA1ICI7MTsyODIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aaaa, mm, dd" type="Integer" array="False" size=""/>
+            <input variable="aaaa"/>
+            <input variable="mm"/>
+            <input variable="dd"/>
+            <output expression="dd&amp;&quot;/&quot;&amp;mm&amp;&quot;/&quot;&amp;aaaa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

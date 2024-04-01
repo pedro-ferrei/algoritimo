@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-05 09:29:34 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDItMDU7IjA4OjMwOjU5ICI7MzYyOQ=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDItMDU7IjA5OjI5OjM0ICI7MTszNzM5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="faltas" type="Integer" array="False" size=""/>
+            <declare name="media, a, b, c" type="Real" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="faltas"/>
+            <assign variable="media" expression="(a*2+b*3+c*5)/10"/>
+            <if expression="media &gt;=7.0 &amp;&amp; faltas &lt;= 25">
+                <then>
+                    <output expression="nome &amp; &quot; Aprovado &quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="nome &amp; &quot; Reprovado &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

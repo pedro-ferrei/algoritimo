@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 01:42:59 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjExOjE2OjMyICI7MjcwNw=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjExOjE4OjMzICI7MTsyODE4"/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA2OyIwMTo0Mjo1OSAiOzE7Mjk0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="e, d, soma, i" type="Integer" array="False" size=""/>
+            <input variable="e"/>
+            <input variable="d"/>
+            <assign variable="soma" expression="0"/>
+            <for variable="i" start="1" end="d" direction="inc" step="1">
+                <assign variable="soma" expression="soma+e"/>
+            </for>
+            <output expression="soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

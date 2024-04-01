@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:40:06 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA0OjM2OjUwICI7Mjc1Mw=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA0OjQwOjA2ICI7MTsyODU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Real" array="False" size=""/>
+            <declare name="p, VA, i" type="Real" array="False" size=""/>
+            <input variable="p"/>
+            <input variable="n"/>
+            <input variable="i"/>
+            <assign variable="VA" expression="(p*(1+i)^1)/i"/>
+            <output expression="VA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

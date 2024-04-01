@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 07:59:58 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjk7IjEwOjM1OjUyICI7MzYyNQ=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMzE7IjA3OjU5OjU4ICI7NzszNzUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, imc" type="Real" array="False" size=""/>
+            <declare name="classe" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="imc" expression="a/(b^2)"/>
+            <output expression="imc" newline="True"/>
+            <if expression="imc= a/(b^2)">
+                <then>
+                    <assign variable="classe" expression="&quot;vc ta no nivel magreza&quot;"/>
+                </then>
+                <else>
+                    <if expression="imc= a/(b^2)">
+                        <then>
+                            <assign variable="classe" expression="&quot;vc ta no nivel normal&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="imc= a/(b^2)">
+                                <then>
+                                    <assign variable="classe" expression="&quot;vc ta no nivel sobrepeso&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="imc= a/(b^2)">
+                                        <then>
+                                            <assign variable="classe" expression="&quot;vc ta no nivel obeso 1&quot;"/>
+                                        </then>
+                                        <else>
+                                            <if expression="imc= a/(b^2)">
+                                                <then>
+                                                    <assign variable="classe" expression="&quot;vc ta no nivel obesidade 2 &quot;"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="imc= a/(b^2)">
+                                                        <then>
+                                                            <assign variable="classe" expression="&quot;vc ta no nivel obesidade 3&quot;"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;sua classifica&#231;ao &#233; magresa &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

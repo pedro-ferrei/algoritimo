@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elo&#225;h.Negrini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:24:03 "/>
+        <attribute name="created" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMToyMDo0MSAiOzI4MjE="/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMToyNDowMyAiOzE7MjkzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="BASE, ALTURA, PROFUNDIDADE, DIAGONAL" type="Real" array="False" size=""/>
+            <input variable="BASE"/>
+            <input variable="ALTURA"/>
+            <input variable="PROFUNDIDADE"/>
+            <assign variable="DIAGONAL" expression="ALTURA^2+BASE^2+PROFUNDIDADE^2"/>
+            <output expression="DIAGONAL" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

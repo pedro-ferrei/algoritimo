@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elo&#225;h.Negrini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:20:01 "/>
+        <attribute name="created" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMToxNToxMCAiOzI4MjE="/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMToyMDowMSAiOzE7MjkyNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RAIO, PERIMETRO, AREA" type="Real" array="False" size=""/>
+            <input variable="RAIO"/>
+            <assign variable="PERIMETRO" expression="RAIO*2*3.14"/>
+            <output expression="&quot;O PERIMETRO &#201; DE:&quot;" newline="True"/>
+            <output expression="PERIMETRO" newline="True"/>
+            <assign variable="AREA" expression="3.14*RAIO^2"/>
+            <output expression="&quot;O AREA &#201; DE:&quot;" newline="True"/>
+            <output expression="AREA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

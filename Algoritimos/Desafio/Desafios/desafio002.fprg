@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:40:12 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjA4OjM2OjA2ICI7MjcxNA=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjA4OjQwOjEyICI7MTsyODE0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Ninicial, Nmenos, Nmais" type="Integer" array="False" size=""/>
+            <input variable="Ninicial"/>
+            <assign variable="Nmais" expression="Ninicial+1"/>
+            <assign variable="Nmenos" expression="Ninicial-1"/>
+            <output expression="Ninicial" newline="True"/>
+            <output expression="Nmenos" newline="True"/>
+            <output expression="Nmais" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

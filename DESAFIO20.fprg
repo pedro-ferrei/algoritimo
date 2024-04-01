@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:14:01 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMzo1NzoxOSAiOzI4NjA="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwNDoxNDowMSAiOzE7Mjk1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NUMERO, SUC" type="Integer" array="False" size=""/>
+            <input variable="NUMERO"/>
+            <if expression="NUMERO&gt;=0 &amp;&amp; NUMERO&lt;=60">
+                <then>
+                    <assign variable="NUMERO" expression="(NUMERO+1)"/>
+                </then>
+                <else>
+                    <output expression="&quot;ESCOLHA UM NUMERO ENTRE 0 E 60&quot;" newline="True"/>
+                </else>
+            </if>
+            <assign variable="NUMERO" expression="NUMERO%61"/>
+            <output expression="NUMERO" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

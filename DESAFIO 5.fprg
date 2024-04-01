@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elo&#225;h.Negrini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:19:54 "/>
+        <attribute name="created" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIwOTo1MTowOSAiOzI4MzY="/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMDoxOTo1NCAiOzE7Mjk0MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="SALARIO, KW" type="Real" array="False" size=""/>
+            <input variable="SALARIO"/>
+            <input variable="KW"/>
+            <assign variable="SALARIO" expression="(SALARIO/7)"/>
+            <output expression="&quot;O VALOR A SER PAGO 100Kw/h &#201; DE:&quot;" newline="True"/>
+            <output expression="SALARIO" newline="True"/>
+            <assign variable="SALARIO" expression="SALARIO/100"/>
+            <output expression="&quot;O VALOR EM R$ DE CADA Kw/h &#201; DE:&quot;" newline="True"/>
+            <output expression="SALARIO" newline="True"/>
+            <assign variable="SALARIO" expression="SALARIO"/>
+            <output expression="&quot;O TOTAL A SER PAGO COM UM DESCONTO DE 10% &#201; DE:&quot;" newline="True"/>
+            <output expression="SALARIO*0.9" newline="True"/>
+            <output expression="&quot;O NOVO VALOR A SER PAGO POR 100Kw/h &#201; DE:&quot;" newline="True"/>
+            <output expression="SALARIO*100-20" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

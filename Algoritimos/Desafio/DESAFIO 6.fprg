@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Elo&#225;h.Negrini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:15:11 "/>
+        <attribute name="created" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMDozOToyMiAiOzI4Mjk="/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMDo1MjoyMiAiOzE7R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjA5OjU0OjE2ICI7ZGVzYWZpbzAwNi5mcHJnOzcxMjQ="/>
+        <attribute name="edited" value="RWxvw6FoLk5lZ3Jpbmk7TlQ0MTsyMDI0LTAzLTA0OyIxMDo1NzoyNiAiOzE7Mjk0MQ=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjExOjE1OjExICI7MTsyODUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Nome, primeiro, ultimo, tres, um, dois, quatro, menosum, doisU, doisD, tmp, todos" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="Nome"/>
+            <output expression="&quot;NOME COMPLETO:&quot;" newline="True"/>
+            <output expression="Nome" newline="True"/>
+            <assign variable="primeiro" expression="Char(Nome, 0)"/>
+            <output expression="&quot;A PRIMEIRA LETRA &#201; :&quot;" newline="True"/>
+            <output expression="primeiro" newline="True"/>
+            <assign variable="ultimo" expression="Char(nome, len(nome) -1)"/>
+            <output expression="&quot;A ULTIMA LETRA &#201; :&quot;" newline="True"/>
+            <output expression="ultimo" newline="True"/>
+            <assign variable="um" expression="Char(nome, 0)"/>
+            <assign variable="dois" expression="Char(nome, 1)"/>
+            <assign variable="tres" expression="Char(nome, 2)"/>
+            <output expression="&quot;A PRIMEIRFA LETRA ATE A TERCEIRA &#201; :&quot;" newline="True"/>
+            <output expression="um&amp;dois&amp;tres" newline="True"/>
+            <assign variable="quatro" expression="Char(Nome, 3)"/>
+            <output expression="&quot;A QUARTA LETRA &#201; :&quot;" newline="True"/>
+            <output expression="quatro" newline="True"/>
+            <assign variable="tmp" expression="&quot;&quot;"/>
+            <for variable="i" start="1" end="len(nome)-1" direction="inc" step="1">
+                <assign variable="tmp" expression="tmp&amp;char(nome,i)"/>
+            </for>
+            <output expression="&quot;Todas as letras menos a primeira&quot;" newline="True"/>
+            <output expression="tmp" newline="True"/>
+            <assign variable="doisU" expression="Char(nome, len(nome) -1)"/>
+            <assign variable="doisD" expression="char(nome, len(nome) -2)"/>
+            <output expression="&quot;OS DOIS ULTIMOS S&#195;O:&quot;" newline="True"/>
+            <output expression="doisD&amp;doisU" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

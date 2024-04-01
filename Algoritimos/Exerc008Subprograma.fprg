@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 10:22:02 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0zMTsiMTA6MTA6MDQgIjszNTIw"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0zMTsiMTA6MjI6MDIgIjsxOzM2Mjk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <output expression="soma(a,b)" newline="True"/>
+        </body>
+    </function>
+    <function name="soma" type="Integer" variable="resultado">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Integer" array="False" size=""/>
+            <assign variable="resultado" expression="a+b"/>
+        </body>
+    </function>
+</flowgorithm>

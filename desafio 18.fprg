@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:47:46 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjo0MTo1MSAiOzI4NDg="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjo0NzozMCAiOzE7Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjAyOjMyOjM5ICI7RGVzYWZpbzAxOC5mcHJnOzcxNjA="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwMjo0Nzo0NiAiOzE7Mjk2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="div, div2, a, b, c, d" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <assign variable="div" expression="a/b+c/d"/>
+            <output expression="div" newline="True"/>
+            <assign variable="div2" expression="a/b*c/d"/>
+            <output expression="div2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 11:05:56 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjQ7IjEwOjUxOjU4ICI7MzYyNA=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjQ7IjExOjA1OjU2ICI7MTszNzMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, Delta" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <output expression="b^2-4*a*c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-07 10:16:05 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMTA6MjY6MTIgIjszNTI4"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMTE6MzA6MjUgIjsxOzM2MzY="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDItMDc7IjEwOjE2OjA1ICI7MTsyODU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ano, ano1, mes, dia, quociente, resto, res, codmes, coddia" type="Integer" array="False" size=""/>
+            <declare name="diasem" type="String" array="False" size=""/>
+            <declare name="lBissexto" type="Boolean" array="False" size=""/>
+            <input variable="dia"/>
+            <input variable="mes"/>
+            <input variable="ano"/>
+            <assign variable="lBissexto" expression="(ano % 4 == 0 &amp;&amp; ano % 100 != 0) || ano % 400 == 0"/>
+            <assign variable="ano1" expression="(ano % 100)"/>
+            <assign variable="quociente" expression="(ano1/4)"/>
+            <assign variable="resto" expression="(ano1 % 7)"/>
+            <assign variable="res" expression="(quociente + resto) % 7"/>
+            <if expression="ano &gt; 2000">
+                <then>
+                    <assign variable="res" expression="res-1"/>
+                    <if expression="res&lt;0">
+                        <then>
+                            <assign variable="res" expression="res+7"/>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else/>
+            </if>
+            <output expression="res" newline="True"/>
+            <if expression="lBissexto &amp;&amp; (mes==1 || mes==2)">
+                <then>
+                    <assign variable="res" expression="res-1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==04 || mes==07">
+                <then>
+                    <assign variable="codmes" expression="0"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==01 || mes==10">
+                <then>
+                    <assign variable="codmes" expression="1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==05">
+                <then>
+                    <assign variable="codmes" expression="2"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==08">
+                <then>
+                    <assign variable="codmes" expression="3"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==06">
+                <then>
+                    <assign variable="codmes" expression="5"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==09 || mes==12">
+                <then>
+                    <assign variable="codmes" expression="6"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mes==02 || mes==03 || mes==11">
+                <then>
+                    <assign variable="codmes" expression="4"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="coddia" expression="(dia+codmes+res)%7"/>
+            <if expression="coddia==0">
+                <then>
+                    <assign variable="diasem" expression="&quot;Sabado&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==1">
+                <then>
+                    <assign variable="diasem" expression="&quot;Domingo&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==2">
+                <then>
+                    <assign variable="diasem" expression="&quot;Segunda-Feira&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==3">
+                <then>
+                    <assign variable="diasem" expression="&quot;Ter&#231;a-Feira&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==4">
+                <then>
+                    <assign variable="diasem" expression="&quot;Quarta-Feira&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==5">
+                <then>
+                    <assign variable="diasem" expression="&quot;Quinta-Feira&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="coddia==6">
+                <then>
+                    <assign variable="diasem" expression="&quot;Sexta-feira&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;O dia da semana do dia &quot;&amp;dia&amp;&quot;/&quot;&amp;mes&amp;&quot;/&quot;&amp;ano&amp;&quot; &#233; &quot;&amp; diasem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

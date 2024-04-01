@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:29:35 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA5OjU1OjM0ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjEwOjI5OjM1ICI7MTsyODYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="KW" type="Integer" array="False" size=""/>
+            <declare name="salario, valor" type="Real" array="False" size=""/>
+            <input variable="salario"/>
+            <input variable="KW"/>
+            <assign variable="salario" expression="salario/7"/>
+            <output expression="salario" newline="True"/>
+            <assign variable="salario" expression="salario/KW"/>
+            <output expression="salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

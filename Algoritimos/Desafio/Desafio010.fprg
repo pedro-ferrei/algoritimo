@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:34:08 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjAxOjMxOjA0ICI7Mjc0NA=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjAxOjM0OjA4ICI7MTsyODU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, res" type="Real" array="False" size=""/>
+            <input variable="base"/>
+            <input variable="altura"/>
+            <assign variable="res" expression="base*altura/2"/>
+            <output expression="&quot;A &#193;rea deste tri&#226;ngulo &#233;&quot;" newline="True"/>
+            <output expression="res" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

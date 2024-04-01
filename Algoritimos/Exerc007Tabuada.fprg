@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:15:04 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0zMTsiMDc6NTE6MzYgIjszNTM2"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0zMTsiMTA6MDM6MDcgIjsyOzM2MzQ="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjAyOjE1OjA0ICI7MTsyODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, z" type="Integer" array="False" size=""/>
+            <declare name="tabuada" type="String" array="False" size=""/>
+            <for variable="z" start="2" end="9" direction="inc" step="1">
+                <for variable="x" start="1" end="10" direction="inc" step="1">
+                    <output expression="x &amp; &quot;x&quot; &amp; z &amp; &quot; = &quot;&amp; x * z" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

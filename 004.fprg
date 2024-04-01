@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 08:02:02 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjQ7IjExOjEwOjExICI7MzYwOQ=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjk7IjA4OjAyOjAyICI7MzszNzMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta, x1, x2" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <assign variable="x1" expression="(-b+Delta^(1/2))/(2*a)"/>
+            <output expression="x1" newline="True"/>
+            <assign variable="x2" expression="-b-delta^(1/2)/(2*a)"/>
+            <if expression="">
+                <then/>
+                <else/>
+            </if>
+            <output expression="" newline="True"/>
+            <output expression="delta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

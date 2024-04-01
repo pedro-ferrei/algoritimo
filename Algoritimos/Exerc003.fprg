@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.Saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 11:22:12 "/>
+        <attribute name="created" value="Tmljb2xhcy5TYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0yNDsiMTA6NTM6NTcgIjszNTA1"/>
+        <attribute name="edited" value="Tmljb2xhcy5TYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0yNDsiMDE6MzU6MDggIjs0OzM2MTI="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMS0zMTsiMTE6MjI6MTIgIjszOzM2MzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="d" expression="d(a,b,c)"/>
+            <if expression="d &gt;=0">
+                <then>
+                    <call expression="raiz(a,b,d)"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="&quot;Impossivel calcular no conjunto dos numeros reais&quot;"/>
+                    <output expression="mensagem" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="d" type="Real" variable="d">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="c" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="d" type="Real" array="False" size=""/>
+            <assign variable="d" expression="b^2-4*a*c"/>
+            <output expression="d" newline="True"/>
+        </body>
+    </function>
+    <function name="raiz" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="d" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-b+d^(1/2))/(2*a)"/>
+            <assign variable="x2" expression="(-b-d^(1/2))/(2*a)"/>
+            <output expression="x1" newline="True"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

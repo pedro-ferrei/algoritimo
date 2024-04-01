@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:27:38 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjI2OjE5ICI7MjcxMQ=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAxOjI3OjM4ICI7MTsyODIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="catO, catA, Hipo" type="Integer" array="False" size=""/>
+            <input variable="catO"/>
+            <input variable="catA"/>
+            <assign variable="Hipo" expression="CatO^2+catA^2"/>
+            <output expression="Hipo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

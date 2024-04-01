@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 08:02:12 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMjk7IjA4OjI1OjU2ICI7MzYzNQ=="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7REVTS1RPUC1WQzFPMkYyOzIwMjQtMDEtMzE7IjA4OjAyOjEyICI7NTszNzI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="inicio do exemplo de rotina de repti&#231;ao"/>
+            <assign variable="c" expression="1"/>
+            <do expression="c &lt;= 100">
+                <if expression="c % 17== 0">
+                    <then>
+                        <output expression="c" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="c + 1"/>
+            </do>
+            <comment text="fim do exemplo da rotina de fazer "/>
+            <comment text="inicio do exemplo de codigo de repte&#231;&#227;o enquanto"/>
+            <assign variable="b" expression="1"/>
+            <while expression="b &lt;= 100">
+                <if expression="b % 13== 0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <comment text="fim do exemplo do codigo de repet&#231;a&#227;oo  equanto"/>
+            <assign variable="b" expression="1"/>
+            <comment text="inicio do exemplo de  codigo de repeti&#231;ao para&#13;&#10;"/>
+            <for variable="a" start="1" end="100" direction="inc" step="1">
+                <if expression="a % 13== 0">
+                    <then>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <comment text="fim do exemplo do codigo de repeti&#231;&#227;o para&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;"/>
+        </body>
+    </function>
+</flowgorithm>

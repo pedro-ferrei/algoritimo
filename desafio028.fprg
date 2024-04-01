@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 09:23:47 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA4OjU1OjU2ICI7MjcyMg=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA5OjIzOjQ3ICI7MTsyODI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="verboI, verb1, verb2, verb3, prim, prim2, teste" type="String" array="False" size=""/>
+            <input variable="verboI"/>
+            <assign variable="prim" expression="Char(verboI, len(verboI) -1)"/>
+            <assign variable="prim2" expression="Char(verboI, len(verboI) -2)"/>
+            <if expression="prim2==&quot;a&quot;">
+                <then>
+                    <output expression="prim2&amp;prim" newline="True"/>
+                    <output expression="&quot;esse &#233; um verbo da primeira conjuga&#231;&#227;o&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="prim2==&quot;e&quot;||&quot;o&quot;">
+                        <then>
+                            <output expression="prim2&amp;prim" newline="True"/>
+                            <output expression="&quot;esse &#233; um verbo da segunda conjuga&#231;&#227;o&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="prim2==&quot;i&quot;">
+                                <then>
+                                    <output expression="prim2&amp;prim" newline="True"/>
+                                    <output expression="&quot;esse &#233; um verbo da terceira conjuga&#231;&#227;o&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;seu verbo n&#227;o &#233; infinitivo&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

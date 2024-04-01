@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="pedro.Ferreira"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 04:53:19 "/>
+        <attribute name="created" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwNDo0OToyMyAiOzI4NTc="/>
+        <attribute name="edited" value="cGVkcm8uRmVycmVpcmE7TlQ0MzsyMDI0LTAzLTA0OyIwNDo1MzoxOSAiOzE7Mjk2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NA" type="Integer" array="False" size=""/>
+            <input variable="NA"/>
+            <assign variable="NA" expression="NA%100"/>
+            <assign variable="NA" expression="NA%10"/>
+            <assign variable="NA" expression="NA*100"/>
+            <assign variable="NA" expression="NA*10"/>
+            <output expression="NA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

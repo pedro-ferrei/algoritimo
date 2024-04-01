@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:01:04 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjEwOjU0OjAyICI7MjcwMw=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjAxOjA0ICI7MTsyODA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, base, altura, primetro, diagonal" type="Integer" array="False" size=""/>
+            <input variable="altura"/>
+            <input variable="base"/>
+            <assign variable="perimetro" expression="(base*2)+(altura*2)"/>
+            <output expression="perimetro" newline="True"/>
+            <assign variable="area" expression="altura*base"/>
+            <output expression="area" newline="True"/>
+            <assign variable="diagonal" expression="Sqrt(altura^2+base^2)"/>
+            <output expression="diagonal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

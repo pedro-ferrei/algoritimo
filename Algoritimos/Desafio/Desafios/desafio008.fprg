@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 11:16:58 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjA3OjMwICI7MjcwMw=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjExOjE2OjU4ICI7MTsyODIx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Raio, Perimetro, Area" type="Real" array="False" size=""/>
+            <input variable="Raio"/>
+            <assign variable="Area" expression="3.14*Raio^2"/>
+            <assign variable="Perimetro" expression="2*3.14*Raio"/>
+            <output expression="Area" newline="True"/>
+            <output expression="Perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 08:58:31 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA4OjU2OjI2ICI7Mjc2Mg=="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDMtMDQ7IjA4OjU4OjMxICI7MTsyODY4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sucessor, antecessor, numero" type="Integer" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="sucessor" expression="numero+1"/>
+            <assign variable="antecessor" expression="numero-1"/>
+            <output expression="sucessor" newline="True"/>
+            <output expression="antecessor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

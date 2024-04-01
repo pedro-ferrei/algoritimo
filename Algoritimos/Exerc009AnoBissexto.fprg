@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Nicolas.saito"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-07 11:27:48 "/>
+        <attribute name="created" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMDg6MDM6MjEgIjszNTMw"/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztERVNLVE9QLUNHNThVSDg7MjAyNC0wMi0wNTsiMDk6Mjk6MTMgIjsyOzM2NDk="/>
+        <attribute name="edited" value="Tmljb2xhcy5zYWl0bztOVDQwOzIwMjQtMDItMDc7IjExOjI3OjQ4ICI7MjsyODY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="ano" type="Integer" array="False" size=""/>
+            <input variable="ano"/>
+            <declare name="lbissexto" type="Boolean" array="False" size=""/>
+            <assign variable="lbissexto" expression="anobissexto (ano)"/>
+            <if expression="lbissexto">
+                <then>
+                    <assign variable="mensagem" expression="ano &amp; &quot; &#233; um ano bissexto&quot;"/>
+                </then>
+                <else>
+                    <assign variable="mensagem" expression="ano &amp; &quot; n&#227;o &#233; um ano bissexto&quot;"/>
+                </else>
+            </if>
+            <output expression="mensagem" newline="True"/>
+        </body>
+    </function>
+    <function name="anobissexto" type="Boolean" variable="resultado">
+        <parameters>
+            <parameter name="ano" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="resultado" type="Boolean" array="False" size=""/>
+            <assign variable="resultado" expression="(ano % 4 == 0 &amp;&amp; ano % 100 != 0) || ano % 400 == 0"/>
+        </body>
+    </function>
+</flowgorithm>

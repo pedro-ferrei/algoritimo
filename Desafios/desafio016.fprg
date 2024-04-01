@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:22:48 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAyOjEzOjM1ICI7MjcwNQ=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDQ7IjAyOjIyOjQ4ICI7MTsyODE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Vcomb, KmpL, custo, distancia" type="Real" array="False" size=""/>
+            <input variable="Vcomb"/>
+            <input variable="distancia"/>
+            <input variable="KmpL"/>
+            <assign variable="custo" expression="Vcomb*(distancia/KmpL)"/>
+            <output expression="custo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
